@@ -1,0 +1,328 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Layout
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+  font-family: 'Lato', sans-serif;
+}
+
+/*
+  ========================================
+  Navigační menu
+  ========================================
+*/
+
+ul {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.menu {
+   display: inline-block;
+   margin-top: 20px;
+   font-weight: bold;
+   
+}
+
+.menu a {
+    color:#007F0E;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #8E6822;
+    border-bottom: 1px solid #8E6822;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.header {
+    width: 100wh;
+    display: block;
+    height: 723px;
+    background-image: url("../pictures/2.jpg");
+}
+
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    color: #8E6822;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*
+  ========================================
+  Logo
+  ========================================
+*/
+
+.logo {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.logo:hover {
+    transition: 8s;
+    transform:rotate(360deg);
+}
+
+.about {
+    height: 150px;
+    padding-left: 120px;
+    padding-right: 120px;
+    block-size: fit-content;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #8E6822;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+/*
+  ========================================
+  Main section
+  ========================================
+*/
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.produkt {
+  width: 400px;
+  height: 400px;
+  border-radius: 3%;
+  padding-bottom: 50px;
+}
+
+.nazev {
+  height: 15%;
+  background-color: #007F0E;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 11px;
+  text-shadow: 1px 1px 2px #8E6822;
+  letter-spacing: 2px;
+}
+
+.foto {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: sepia(90%);
+}
+
+.prvni {
+  background-image: url("../pictures/kravy2.jpg");
+  background-position-x: 34%;
+}
+
+.druhy {
+  background-image: url("../pictures/rostliny.jpg");
+}
+
+.treti {
+  background-image: url("../pictures/sluzby.jpg");
+  background-position-x: 50%;
+}
+
+.ctvrta {
+  background-image: url("../pictures/ovecka.jpg");
+  background-position-x: 60%;
+  background-position-y: 50%;
+  background-size: 97%;
+  filter: grayscale(0%);
+}
+
+.pata {
+  background-image: url("../pictures/hlavni-fotka.jpg");
+  background-position-x: 60%;
+  background-position-y: 50%;
+  filter: grayscale(0%);
+}
+
+.sesta {
+  background-image: url("../pictures/zvirata2.jpg");
+  filter: grayscale(0%);
+  background-position-y: 50%;
+
+}
+
+.foto:hover {
+  filter: opacity(100%);
+  background-color: white;
+}
+
+@media (max-width: 770px) {
+  .main-article {
+    flex-basis: 60%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer {
+    margin-top: 100px;
+    color: #8E6822;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*
+  ========================================
+  Kontaktní formulář
+  ========================================
+*/
+
+input {
+    width: 200px; 
+}
+
+textarea {
+  width: 400px;
+}
+
+.kontakt {
+ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 400px;
+ 
+}
+
+input, textarea {
+  border-radius: 5%;
+  background-color: #007F0E;
+
+}
+
+.udaje {
+  flex-basis: 840px;
+  background-color: #007F0E;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  display: inline-block;
+}
+
+.kontaktni-udaje {
+  color:black;
+  display: inline-block;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.galerie {
+  height: 200px;
+}
+
+.obrazky {
+  height: 400px;
+  display: flex;
+}
+
+.nazev-galerie {
+  border: 3px solid #007F0E;
+  flex-basis: calc(100% / 3);
+}
+
+.pictures {
+  background-image: url("../pictures/kravy2.jpg");
+  background-repeat: no-repeat;
+  flex-basis: calc(100% / 3 * 2);
+  background-size: cover;
+}
+
+.pictures2 {
+  flex-basis: calc(100% / 3 * 2);
+
+}

@@ -13,12 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <!-- Navigation -->
-    <nav class="container">
-        <!-- Header -->
-        <div class="header">
-            <div>
-                <ul>
+    <!-- Hero image -->
+    <header class="hero-image shadow">
+        <nav class="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
                     <li class="menu"><a href="default.asp">Domů</a></li>
                     <li class="menu"><a href="default.asp">Novinky</a></li>
                     <li class="menu"><a href="default.asp">O nás</a></li>
@@ -26,108 +31,106 @@
                     <li class="menu"><a href="default.asp">Kontakt</a></li>
                 </ul>
             </div>
+        </nav>
+        <div>
             <img class="logo" src="assets/pictures/logo.png" alt="pole">
             <h1>Rodinná farma z podhůří Beskyd</h1>
         </div>
-    </nav>
+    </header>
 
-    <section class="main-section container">
+    <div class="about">
+        <h2>Novinky</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo aspernatur, ea quidem blanditiis sapiente nobis atque minima nam nisi harum illum at magnam. Praesentium adipisci mollitia corporis velit ad explicabo! Explicabo temporibus laudantium esse nulla doloremque enim itaque quasi quam autem iste dolorum nemo doloribus cumque modi vero, similique iusto, aperiam eius, commodi veritatis laborum repellat facilis labore. Quasi, accusantium.
+        </p>
+    </div>
+
+    <section class="main-section">
+        <div class="produkt border-radius-right">
+            
+            <div class="foto prvni border-radius-right shadow">
+                <div>
+                    <p class="nazev">Zvířata</p>
+
+                </div>
+            </div>
+        </div><br>
         <div class="produkt">
-            <div class="nazev">
-                <p>Zvířata</p>
-            </div>
-            <div class="foto prvni shadow">
-            </div>
-        </div>
-        <div class="produkt">
-            <div class="nazev">
-                <p>Plodiny</p>
-            </div>
             <div class="foto druhy shadow">
+                <div>
+                    <p class="nazev">Plodiny</p>
+
+                </div>
             </div>
         </div>
         <div class="produkt">
-            <div class="nazev">
-                <p>Služby</p>
-            </div>
-            <div class="foto treti shadow">
+            <div class="foto treti shadow border-radius-left">
+                <div>
+                    <p class="nazev">Služby</p>
+
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="about container">
-        <h2>Novinky</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo aspernatur, ea quidem blanditiis sapiente nobis atque minima nam nisi harum illum at magnam. Praesentium adipisci mollitia corporis velit ad explicabo! Explicabo temporibus laudantium esse nulla doloremque enim itaque quasi quam autem iste dolorum nemo doloribus cumque modi vero, similique iusto, aperiam eius, commodi veritatis laborum repellat facilis labore. Quasi, accusantium eaque doloremque fugit non laboriosam expedita assumenda exercitationem quia quam possimus nobis minus quaerat? Ducimus voluptatem qui delectus accusamus ullam tempora enim, est hic alias voluptate voluptatum aperiam dolorum cum perferendis iusto tenetur, corporis earum optio pariatur sunt modi.
-        </p>
-    </div>
-
-    <div class="obrazky container">
-        <div class="nazev-galerie">
-            <h2>Galerie</h2>
-        </div>
-        <div class="pictures">
-
-        </div>
-        
-    </div>
-
+    <!-- 
     
+        <h2>Kontakt</h2>
 
-    <div class="about container">
-        <h2>O nás</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo aspernatur, ea quidem blanditiis sapiente nobis atque minima nam nisi harum illum at magnam. Praesentium adipisci mollitia corporis velit ad explicabo! Explicabo temporibus laudantium esse nulla doloremque enim itaque quasi quam autem iste dolorum nemo doloribus cumque modi vero, similique iusto, aperiam eius, commodi veritatis laborum repellat facilis labore. Quasi, accusantium eaque doloremque fugit non laboriosam expedita assumenda exercitationem quia quam possimus nobis minus quaerat? Ducimus voluptatem qui delectus accusamus ullam tempora enim, est hic alias voluptate voluptatum aperiam dolorum cum perferendis iusto tenetur, corporis earum optio pariatur sunt modi.
-        </p>
-    </div>
+    <div class="obrazky">
+        
+        <div class="pictures">
+            Napište nám
+            <form>  
+                <label for="jmeno"></label><br>
+                <input type="text" id="jmeno" name="jmeno" placeholder="Jméno"><br>
+                
+                <label for="email"></label><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br>
 
-    <div class="obrazky container">
-        <div class="nazev-galerie">
-            <h2>Kontakt</h2>
+
+                <label for="telefon"></label><br>
+                <input type="tel" id="telefon" name="telefon" placeholder="Telefon"><br>
+            
+                <label for="zprava"></label><br>
+                <textarea id="zprava" name="zprava" placeholder="Zpráva" style="height:200px"></textarea><br>
+            
+                <input class="button" type="submit" value="Odeslat">
+            </form>  
+        </div>
+        <div>
             <div class="kontaktni-udaje">
                 <h3>Adresa</h3>
                 <p>Horní Bludovice <br>
                 email: info@novagro.cz<br>
             tel.: +420 606 284 787</p>
-        
-
-                <h3>Sledujte nás
-
-                </h3>
+                <h3>Sledujte nás</h3>
             </div>
-        </div>
-        <div class="pictures2">
-            Napište nám
-            <form>  
-                <label for="jmeno">Jméno</label><br>
-                <input type="text" id="jmeno" name="jmeno">
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email"><br>
+        </div> Footer -->
+        
+        <ul class="sitemap2">
+            <li class="sitemap"><a href="default.asp">Domů</a></li>
+            <li class="sitemap"><a href="default.asp">Novinky</a></li>
+            <li class="sitemap"><a href="default.asp">O nás</a></li>
+            <li class="sitemap"><a href="default.asp">Galerie</a></li>
+            <li class="sitemap"><a href="default.asp">Kontakt</a></li>
+            <li class="sitemap"><a href="default.asp">Farma</a></li>
+        </ul>
+        <footer>
+        <div class="footer">
+            <div class="kontaktni-udaje">
+                <h3>Adresa</h3>
+                <p>Horní Bludovice <br>
+                email: info@novagro.cz<br>
+            tel.: +420 606 284 787</p>
+                <h3>Sledujte nás</h3>
+            </div>
 
-
-                <label for="telefon">Telefon</label><br>
-                <input type="tel" id="telefon" name="telefon"><br>
-
-                <label for="telefon">Telefon</label><br>
-                <input type="tel" id="telefon" name="telefon"><br>
-            
-                <label for="zprava">Zpráva</label><br>
-                <textarea id="zprava" name="zprava" placeholder="Write something.." style="height:200px"></textarea><br>
-            
-                <input type="submit" value="Odeslat">
-            </form>  
-        </div>
+        
+    </footer>
+    <p>&copy; 2023 Veronika Gawlasová - www.veronika-gawlasova.cz</p>
         
     </div>
     
-
-       
-    </div>
-    <!-- Footer -->
-    <footer class="container">
-        <div>
-            <p>&copy; 2023 Veronika Gawlasová - www.veronika-gawlasova.cz</p>
-        </div>
-    </footer>
     
 </body>
 </html>
