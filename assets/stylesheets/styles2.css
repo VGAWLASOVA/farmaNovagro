@@ -63,7 +63,7 @@ table {
 
 body {
   margin: 0 auto;
-  width: 480px;
+  width: 100vw;
   font-family: 'Lato', sans-serif;
 }
 
@@ -112,7 +112,7 @@ h2 {
     background-position: center;
     border-radius: 0 0 0 15%;
     height: 800px;
-    /*width: 100wh; ??? */
+    /*width: 100%; ??? */
 }
 
 /*
