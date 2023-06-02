@@ -63,23 +63,40 @@ table {
 
 body {
   margin: 0 auto;
-  width: 767px;
+  width: 480px;
   font-family: 'Lato', sans-serif;
 }
 
-/* styles for screens smaller than 768px */
-@media (max-width: 767px) {
-    /* CSS styles */
-  }
-  
-  /* styles for screens between 768px and 991px */
-  @media (min-width: 768px) and (max-width: 991px) {
-    /* CSS styles */
-  }
-  
-  /* styles for screens larger than 992px */
-  @media (min-width: 992px) {
-    /* CSS styles */
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    color: #8E6822;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #8E6822;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 2px rgb(112, 99, 99);
+}
+
+.border-radius-right {
+    border-radius: 0 25% 0 0;
+}
+
+.border-radius-left {
+    border-radius: 0 0 0 25%;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   }
 
 /*
@@ -89,7 +106,7 @@ body {
 */
 
 .hero-image {
-    background-image: url("../pictures/2.jpg");
+    background-image: url("../pictures/hero-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,47 +115,47 @@ body {
     /*width: 100wh; ??? */
 }
 
+/*
+  ========================================
+  -- Hamburger menu
+  ========================================
+*/
+
 #menuToggle
 {
   display: block;
   position: relative;
   top: 50px;
-  left: 30px;
-  
+  left: 50px;
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
+  /*filter: opacity(80%);*/
 }
 
 #menuToggle a
 {
   text-decoration: none;
   color: #007F0E;
-  
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover
 {
-  color: tomato;
+    color: #8E6822;
 }
-
 
 #menuToggle input
 {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 100%;
+  /* height: 32px; */
   position: absolute;
   top: -7px;
   left: -5px;
-  
   cursor: pointer;
-  
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-  
   -webkit-touch-callout: none;
 }
 
@@ -152,14 +169,10 @@ body {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
-  background: #cdcdcd;
+  background: #8E6822;
   border-radius: 3px;
-  
   z-index: 1;
-  
   transform-origin: 4px 0px;
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -207,30 +220,31 @@ body {
  * Make this absolute positioned
  * at the top left of the screen
  */
+
 #menu
 {
+  display: block;
+  font-weight: bold;
   position: absolute;
-  width: 300px;
+  width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
-  background: white;
-  filter: opacity(50%);
+  padding-bottom: 30px;
+  background:rgba(255, 255, 255, 0.849);
+  border-radius: 0 0 25% 0;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
-  padding: 10px 0;
-  font-size: 22px;
+  padding: 15px 0;
+  font-size: 25px;
 }
 
 /*
@@ -241,171 +255,119 @@ body {
   transform: none;
 }
 
-
-.menu {
-   display: block;
-   margin-top: 20px;
-   font-weight: bold;
-   
-}
-
-.menu a {
-    color:#007F0E;
-    text-decoration: none;
-}
-
-.menu a:hover {
-    color: #8E6822;
-    border-bottom: 1px solid #8E6822;
-}
-
 /*
   ========================================
-  Header
-  ========================================
-*/
-
-
-h1 {
-    margin-top: 10px;
-    text-align: center;
-    color: #8E6822;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/*
-  ========================================
-  Logo
+  -- Logo
   ========================================
 */
 
 .logo {
-    margin-top: 130px;
+    margin-top: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 50%;
 }
 
 .logo:hover {
-    transition: 8s;
+    transition: 4s;
     transform:rotate(360deg);
 }
 
-.about {
-    height: 390px;
-    padding-left: 80px;
-    padding-right: 80px;
+/*
+  ========================================
+  Article
+  ========================================
+*/
+
+.article {
+    height: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     block-size: fit-content;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
 }
 
-h2 {
-    font-size: 25px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    color: #8E6822;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 5px;
-}
 /*
   ========================================
   Main section
   ========================================
 */
 
-.main-section {
+.product-section {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-.produkt {
-  padding-bottom: 10px;
-  height: 400px;
-  width: 100wh;
-  position: relative;
-
-}
-
-.nazev {
-  background-color: #8E6822;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 11px;
-  text-shadow: 1px 1px 2px #8E6822;
-  letter-spacing: 2px;
-  position: absolute;
-}
-
-.foto {
+.photo {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 300px;
+  position: relative;
+  width: 480px;
+  height: 300px;
 }
 
-.border-radius-right {
-    border-radius: 0 25% 0 0;
-
-}
-
-.border-radius-left {
-    border-radius: 0 0 0 25%;
-}
-
-.prvni {
-  background-image: url("../pictures/kravy2.jpg");
+.one {
+  background-image: url("../pictures/sluzby.jpg");
   background-position-x: 34%;
 }
 
-.druhy {
-  background-image: url("../pictures/rostliny.jpg");
+.two {
+  background-image: url("../pictures/zvirata.jpg");
 }
 
-.treti {
-  background-image: url("../pictures/sluzby.jpg");
+.three {
+  background-image: url("../pictures/plodiny.jpg");
   background-position-x: 50%;
 }
 
-.ctvrta {
-  background-image: url("../pictures/ovecka.jpg");
-  background-position-x: 60%;
-  background-position-y: 50%;
-  background-size: 97%;
-  filter: grayscale(0%);
+.title-effect {
+    background: rgba(255, 255, 255, 0.603);
+    width: 100%;
+    height: 100%;
 }
 
-.pata {
-  background-image: url("../pictures/hlavni-fotka.jpg");
-  background-position-x: 60%;
-  background-position-y: 50%;
-  filter: grayscale(0%);
-}
-
-.sesta {
-  background-image: url("../pictures/zvirata2.jpg");
-  filter: grayscale(0%);
-  background-position-y: 50%;
-
-}
-
-.foto:hover {
-    filter: sepia(50%);
-  background-color: white;
-}
-
-@media (max-width: 770px) {
-  .main-article {
-    flex-basis: 60%;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
+.title {
+    color:#007F0E;
+    font-size: 55px;
+    text-shadow: 1px 1px 5px black;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    width: 50%;
+    height: 80px;
+    text-transform: uppercase;
   }
+
+/*
+  ========================================
+  Sitemap
+  ========================================
+*/
+
+.sitemap {
+    padding: 50px 0 0 80px;
+}
+
+.sitemap a {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.sitemap li {
+    padding: 15px 0;
+}
+
+.sitemap a:hover {
+    color: #8E6822;
 }
 
 /*
@@ -414,100 +376,72 @@ h2 {
   ========================================
 */
 
-
-/*
-  ========================================
-  Kontaktní formulář
-  ========================================
-*/
-
-.button {
-    width: 100px; 
-    background-color: white;
-    
-}
-
-input, textarea {
-  border-radius: 20%;
-  background-color: transparent;
-  width: 300px;
-  height: 30px;
-  
-}
-
-.shadow {
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-}
-
-.nazev-galerie {
-  height: 400px;
-  background-color: #007F0E;
-}
-
-
-/*
-  ========================================
-  Kontaktní formulář
-  ========================================
-*/
-
-.obrazky {
-    display: flex;
-    flex-direction: row;
-    background-image: url("../pictures/2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    flex-wrap: wrap;
-    
-}
-
-.pictures {
-    flex-basis: 49%;
-    background-color: transparent;
-}
-
-.kontaktni-udaje {
-    padding-left: 80px;
-    display: inline-block;
-}
-
-.form:hover {
-    background-color: #007F0E;
-}
-
-.sitemap2 li {
-    
-    display: block;
-    margin-top: 20px;
-    font-weight: bold;
-    padding-left: 80px;
-    text-decoration: none;
-}
-
- 
- .sitemap2 {
-     color:#007F0E;
-     text-decoration: none;
-     text-align: center;
-     height: 390px;
- }
- 
- .sitemap2 a:hover {
-     color: #8E6822;
-     border-bottom: 1px solid #8E6822;
-     text-decoration: none;
- }
-.sitemap2 a {
- text-decoration: none;
- color:#007F0E;
-}
-
 .footer {
-    background-image: url("../pictures/2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 390px;
+    height: 239px;
+    background-color:#8E6822;
+    padding: 50px 0 50px 80px;
+    color: black;
+    position: relative;
 }
 
+.footer-logo {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 30%;
+}
+
+.footer li {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.email {
+    list-style-image: url("../pictures/email.png");
+}
+
+.phone {
+    list-style-image: url("../pictures/phone.png");
+}
+
+.facebook {
+    list-style-image: url("../pictures/facebook.png");
+}
+
+.location {
+    list-style-image: url("../pictures/location.png");
+}
+
+/*
+  ========================================
+  Copyright info
+  ========================================
+*/
+
+.copyright {
+    color:#8E6822;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+/*
+  ========================================
+  Media queries
+  ========================================
+*/
+
+/* styles for screens smaller than 768px */
+@media (max-width: 767px) {
+    /* CSS styles */
+  }
+  
+  /* styles for screens between 768px and 991px */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles */
+  }
+  
+  /* styles for screens larger than 992px */
+  @media (min-width: 992px) {
+    /* CSS styles */
+  }
