@@ -62,6 +62,11 @@ table {
 }
 
 body {
+<<<<<<< HEAD
+=======
+  margin: 0 auto;
+  width: 100vw;
+>>>>>>> 9a82afe8381d745191110b4679c52d943e6e2c6e
   font-family: 'Lato', sans-serif;
 }
 
@@ -110,7 +115,11 @@ h2 {
     background-position: center;
     border-radius: 0 0 0 15%;
     height: 800px;
+<<<<<<< HEAD
     width: 100wh;
+=======
+    /*width: 100%; ??? */
+>>>>>>> 9a82afe8381d745191110b4679c52d943e6e2c6e
 }
 
 /*
