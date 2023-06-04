@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -11,11 +12,13 @@
     <link rel="icon" type="image/x-icon" href="assets/pictures/favicon_logo.png">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles2.css">
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body class="grid">
     <!-- Hero image -->
-    <header class="hero-image shadow">
+    <header class="hero-image shadow row-one">
         <nav>
             <div id="menuToggle">
                 <input type="checkbox" />
@@ -39,35 +42,32 @@
         </div>
     </header>
 
-    <article class="article">
+    <article class="article row-two">
         <h2>Novinky</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo aspernatur, ea quidem blanditiis sapiente nobis atque minima nam nisi harum illum at magnam. Praesentium adipisci mollitia corporis velit ad explicabo! Explicabo temporibus laudantium esse nulla doloremque enim itaque quasi quam autem iste dolorum nemo doloribus cumque modi vero, similique iusto, aperiam eius, commodi veritatis laborum repellat facilis labore. Quasi, accusantium.
         </p>
     </article>
 
-    <section class="product-section">
-        <div class="border-radius-right">
-            <div class="photo one shadow border-radius-right">
-                <div class="title-effect">
-                    <p class="title">Služby</p>
-                </div>
-            </div>
+    <section class="row-three">
+        <div class="flex-box">
+            <a class="title uno" href="https://www.facebook.com/novagro.cz">Služby</a>
+            <div class="photo two shadow"></div>
         </div>
-        <div class="photo two shadow">
-            <div class="title-effect">
-                <p class="title">Zvířata</p>
+            <div class="flex-box bg-color">
+                <div class="photo two shadow"></div>
+                <a class="title" href="https://www.facebook.com/novagro.cz">Zvířata</a>
             </div>
-        </div>
-        <div class="photo three shadow border-radius-left">
-            <div class="title-effect">
-                <p class="title">Plodiny</p>
+            <div class="flex-box">
+                <a class="title uno" href="https://www.facebook.com/novagro.cz">Plodiny</a>
+                <div class="photo two shadow"></div>
             </div>
         </div>
     </section>
-    
+
+    <!-- 
     <nav>
         <ul class="sitemap">
-            <li><a href="default.asp">Domů</a></li>
+            <li><a href="index.html">Domů</a></li>
             <li><a href="default.asp">Novinky</a></li>
             <li><a href="default.asp">O nás</a></li>
             <li><a href="default.asp">Galerie</a></li>
@@ -75,25 +75,37 @@
             <li><a href="default.asp">Farma</a></li>
         </ul>
     </nav>
+    -->
 
-    <footer>
+    <article class="article row-four">
+        <h2>O nás</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo aspernatur, ea quidem blanditiis sapiente nobis atque minima nam nisi harum illum at magnam. Praesentium adipisci mollitia corporis velit ad explicabo! Explicabo temporibus laudantium esse nulla doloremque enim itaque quasi quam autem iste dolorum nemo doloribus cumque modi vero, similique iusto, aperiam eius, commodi veritatis laborum repellat facilis labore. Quasi, accusantium.
+        </p>
+        <button>Více</button>
+    </article>
+
+    <footer class="row-five">
         <h2>Kontakt</h2>
-        <div class="footer border-radius-right shadow">
-            <img class="footer-logo" src="assets/pictures/footer-logo.png" alt="logo">
+        <div class="footer shadow">
+            <!--<img class="footer-logo" src="assets/pictures/footer-logo.png" alt="logo"-->
             <ul>
-                <li class="email">info@novagro.cz</li>
-                <li class="phone">+420 606 284 787</li>
-                <li class="facebook">www.facebook.com/novagro.cz</li>
+                <li class="email">
+                    <a href="mailto:info@novagro.cz">info@novagro.cz</a>
+                </li>
+                <li class="phone">
+                    <a href="tel:+420606284787">+420 606 284 787</a>
+                </li>
+                <li class="facebook">
+                    <a href="https://www.facebook.com/novagro.cz" target="_blank">www.facebook.com/novagro.cz</a>
+                </li>
+
                 <li class="location">Horní Bludovice</li>
             </ul>
-        </div>
-  
-
-        
+        </div> 
     </footer>
 
-    <div class="copyright">
-        <p>&copy; 2023 Veronika Gawlasová - wwww.veronika-gawlasova.cz</p>
+    <div class="copyright row-six">
+        <p>&copy; 2023 Veronika Gawlasová</p>
     </div>
 
 </body>
