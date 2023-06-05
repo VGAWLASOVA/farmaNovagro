@@ -84,6 +84,7 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black;
 }
 
 h2 {
@@ -94,9 +95,9 @@ h2 {
     font-weight: bold;
     padding-top: 50px;
     padding-bottom: 20px;
-    text-shadow: 1px 1px 2px rgb(112, 99, 99);
+    text-shadow: 1px 1px 2px white;
     letter-spacing: 2px;
-  
+    text-shadow: 1px 1px 2px black;
     text-transform: uppercase;
 }
 
@@ -126,7 +127,7 @@ h2 {
     background-image: url("../pictures/hero-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 900px;
   }
 
 /*
@@ -242,10 +243,10 @@ h2 {
   position: absolute;
   width: 100%;
   margin: -100px 0 0 -50px;
-  padding: 50px;
+  padding: 50px 0 50px 50px;
   padding-top: 125px;
   padding-bottom: 30px;
-  background:rgba(255, 255, 255, 0.945);
+  background:white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -323,8 +324,7 @@ h2 {
 
 .flex-box {
     display: flex;
-    flex-direction: row;
-}
+    flex-direction: row;}
 
 /* desktop styles */
 @media (min-width: 1200px) {
@@ -344,6 +344,7 @@ h2 {
   background-size: contain;
   background-position: center center;
   height: 300px;
+  max-height: 400px;
   flex-basis: 49%;
 }
 
@@ -368,7 +369,13 @@ h2 {
     letter-spacing: 3px;
     text-decoration: none;
     flex-basis: 49%;
+    text-shadow: 2px 2px 4px black;
+    margin-top: 122px;
   }
+
+.title a:hover {
+    color: #007F0E;
+}
 
 /*
   ========================================
@@ -420,13 +427,14 @@ h2 {
 
 .footer {
     height: 239px;
-    background-image: url("../pictures/hero-image.jpg");
+    background-image: url("../pictures/footer-image.png");
+    background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
     padding: 50px 0 50px 80px;
     color: black;
     position: relative;
-    border-radius: 10% 10% 0 0;
-    filter: opacity(80%);
+    font-weight: bold;
 }
 
 .footer-logo {
@@ -440,6 +448,7 @@ h2 {
   font-size: 18px;
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 .footer a:hover {
