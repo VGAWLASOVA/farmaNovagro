@@ -349,8 +349,8 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  max-height: 200px;
-  max-width: 200px;
+  height: 200px;
+  width: 200px;
   flex-basis: 49%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -447,9 +447,12 @@ a.title {
     background-color:var(--primary);
     color: white;
     display: block;
-    padding-left: 35px;
-    padding-bottom: 20px;
-  
+ 
+}
+
+.border {
+  padding-left: 35px;
+  padding-bottom: 50px;
 }
 
 /*
