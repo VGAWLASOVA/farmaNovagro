@@ -257,8 +257,8 @@ h2 {
 
 #menu li
 {
-  padding: 15px 0;
-  font-size: 25px;
+  line-height: 1.8;
+  font-size: 28px;
 }
 
 /*
@@ -267,6 +267,10 @@ h2 {
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+.active:hover {
+  color: var(black);
 }
 
 /*
@@ -299,7 +303,7 @@ h2 {
   grid-row: 2;
 }
 
-.article {
+.article-news {
     height: 150px;
     padding-left: 35px;
     padding-right: 35px;
@@ -343,14 +347,15 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  height: 300px;
-  max-height: 400px;
+  height: 200px;
+  width: 200px;
   flex-basis: 49%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .one {
   background-image: url("../pictures/sluzby.png");
-  background-position-x: 34%;
 }
 
 .two {
@@ -362,18 +367,19 @@ h2 {
   background-position-x: 50%;
 }
 
-.title {
-    color: var(--primary);
-    font-size: 55px;
-    text-shadow: 1px 1px 5px black;
-    letter-spacing: 3px;
-    text-decoration: none;
-    flex-basis: 49%;
-    text-shadow: 2px 2px 4px black;
-    margin-top: 122px;
-  }
+a.title {
+  display: inline;
+  font-size: 55px;
+  font-family: 'DM Serif Display', serif;
+  letter-spacing: 3px;
+  text-decoration: none;
+  align-self: center;
+  color: var(--primary);
+  flex-basis: 49%;
+  text-shadow: 2px 2px 4px black;
+}
 
-.title a:hover {
+.title:hover {
     color: #007F0E;
 }
 
@@ -386,6 +392,14 @@ h2 {
 .row-four {
     grid-column: 1/2;
     grid-row: 4;
+}
+
+.article-about {
+  height: 150px;
+  padding-left: 35px;
+  padding-right: 35px;
+  block-size: fit-content;
+  font-family: 'Raleway', sans-serif;
 }
 
 .sitemap {
@@ -426,29 +440,31 @@ h2 {
 }
 
 .footer {
-    height: 239px;
-    background-image: url("../pictures/footer-image.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    padding: 50px 0 50px 80px;
-    color: black;
-    position: relative;
-    font-weight: bold;
+    background-color:var(--primary);
+    color: white;
+    display: block;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
 }
 
+/*
 .footer-logo {
     position: absolute;
     top: 10%;
     right: 10%;
     max-width: 30%;
 }
+*/
 
 .footer a {
   font-size: 18px;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  color: white;
+  display:block;
+  padding-left: 50px;
+  line-height: 1.8;
 }
 
 .footer a:hover {
@@ -456,19 +472,31 @@ h2 {
 }
 
 .email {
-    list-style-image: url("../pictures/email.png");
+    background-image: url("../pictures/email.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
 }
 
 .phone {
-    list-style-image: url("../pictures/phone.png");
+  background-image: url("../pictures/phone.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
 }
 
 .facebook {
-    list-style-image: url("../pictures/facebook.png");
+  background-image: url("../pictures/facebook.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
 }
 
 .location {
-    list-style-image: url("../pictures/location.png");
+  background-image: url("../pictures/location.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
 }
 
 /*
