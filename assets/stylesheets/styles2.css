@@ -324,6 +324,8 @@ h2 {
   text-align: center;
   background-image: url("../pictures/sprinkles.png");
   background-repeat: repeat;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .flex-box {
@@ -347,8 +349,8 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  height: 200px;
-  width: 200px;
+  max-height: 200px;
+  max-width: 200px;
   flex-basis: 49%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -369,7 +371,7 @@ h2 {
 
 a.title {
   display: inline;
-  font-size: 55px;
+  font-size: 45px;
   font-family: 'DM Serif Display', serif;
   letter-spacing: 3px;
   text-decoration: none;
@@ -377,6 +379,7 @@ a.title {
   color: var(--primary);
   flex-basis: 49%;
   text-shadow: 2px 2px 4px black;
+  margin-right: 30px;
 }
 
 .title:hover {
@@ -398,6 +401,7 @@ a.title {
   height: 150px;
   padding-left: 35px;
   padding-right: 35px;
+  padding-bottom: 50px;
   block-size: fit-content;
   font-family: 'Raleway', sans-serif;
 }
@@ -444,7 +448,6 @@ a.title {
     color: white;
     display: block;
     padding-left: 35px;
-    padding-top: 20px;
     padding-bottom: 20px;
   
 }
